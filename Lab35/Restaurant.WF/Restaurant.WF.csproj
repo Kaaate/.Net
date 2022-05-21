@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Restaurant.Bl.Abstract\Restaurant.Bl.Abstract.csproj" />
+    <ProjectReference Include="..\Restaurant.Bl.Impl\Restaurant.Bl.Impl.csproj" />
+    <ProjectReference Include="..\Restaurant.Dal.Ef.Postgres\Restaurant.Dal.Ef.Postgres.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="FormBakerManagement - Copy.Designer.cs">
+      <DependentUpon>FormBakerManagement.Designer.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="FormBakerManagement - Copy.resx">
+      <DependentUpon>FormBakerManagement.resx</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
